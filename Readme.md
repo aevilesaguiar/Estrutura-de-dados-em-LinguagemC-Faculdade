@@ -150,3 +150,5 @@ double: 8 bytes
 Em linguagens de alto nível utilizamos estruturas e não nos importamos de que forma nossos dados são armazenados fisicamente.
 
 
+![image](https://user-images.githubusercontent.com/52088444/169662858-2647a5a2-156d-4dfc-b4a7-4e0a4d74bb1a.png)
+
