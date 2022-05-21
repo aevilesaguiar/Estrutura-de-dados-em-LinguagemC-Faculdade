@@ -172,3 +172,4 @@ A resposta é que devemos avaliar o problema, se sabemos todas as variaveis que 
 
 ![image](https://user-images.githubusercontent.com/52088444/169663524-944bfa14-62db-421e-9458-9f84ceab56b2.png)
 
+![image](https://user-images.githubusercontent.com/52088444/169663689-734571d0-8810-4ac0-9a6f-ef6c3c0680d5.png)
