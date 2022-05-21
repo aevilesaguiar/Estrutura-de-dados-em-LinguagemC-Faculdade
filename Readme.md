@@ -170,4 +170,5 @@ A resposta é que devemos avaliar o problema, se sabemos todas as variaveis que 
 - Estruturas não-lineares: são aquelas em que os elementos estão espalhados na memória, ou seja, não estão sequenciais. Então como saber onde elas estão? Para saber onde essas estruturas estão podemos guardar um ponteiro que aponte para elas. Cada estrutura portanto tem um ponteiro que aponta para si na memória RAM.
 
 
+![image](https://user-images.githubusercontent.com/52088444/169663524-944bfa14-62db-421e-9458-9f84ceab56b2.png)
 
