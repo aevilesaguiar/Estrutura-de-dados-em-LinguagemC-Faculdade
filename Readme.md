@@ -149,6 +149,25 @@ double: 8 bytes
 
 Em linguagens de alto nível utilizamos estruturas e não nos importamos de que forma nossos dados são armazenados fisicamente.
 
+## Alocação de Memória RAM na prática
 
 ![image](https://user-images.githubusercontent.com/52088444/169662858-2647a5a2-156d-4dfc-b4a7-4e0a4d74bb1a.png)
+
+- Variaveis Locais/instruções do programa, variáveis locais: é onde fica a área de armazenamento fixo. As variaveis já existem desde o inicio do programa e não precisamos alocar as mesmas no meio do programa, ela já é de um determinado tipo e já está alocada na memória.
+
+- Heap: vamos dizer que o Heap é a memória global do programa, ou seja memória livre, aquela que alocamos em tempo de execução. é o caso onde preciso de mais memória em uma estrutura de memória, então é nessa parte da memória que ficam essas variáveis.
+
+- Pilha (Stack): Já a pilha de funções (stack) é uma área da memória que aloca dados/variáveis ou ponteiros quando uma função é chamada e desalocada quando a função termina. Podemos dizer então que representa a memória local àquela função. Variáveis Locais da função como parametros, ou seja elas só existem quando a função está executando, após finalizar a função ela deixa de existir, são variáveis que existem em determinado momento do programa. 
+
+## O que é melhor alocar continuamente todos os dados do meu programa? ou alocar dinamicamente conforme demanda?
+
+A resposta é que devemos avaliar o problema, se sabemos todas as variaveis que serão alocadas no programa é indicado alocação continua, mas caso não saibamos é indicado usar a alocação dinâmica sob demanda.
+
+## Linearidade x Não linearidade
+
+- Estruturas Lineares: sãoa quelas em que elementos estão alocados lado a lado na memoria RAM. eX: arrays,vetores.
+
+- Estruturas não-lineares: são aquelas em que os elementos estão espalhados na memória, ou seja, não estão sequenciais. Então como saber onde elas estão? Para saber onde essas estruturas estão podemos guardar um ponteiro que aponte para elas. Cada estrutura portanto tem um ponteiro que aponta para si na memória RAM.
+
+
 
