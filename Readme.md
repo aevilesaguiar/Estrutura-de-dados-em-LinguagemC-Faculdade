@@ -223,7 +223,7 @@ Uma lista é implementada com a utilização de:
  - Ponteiros: realizam o encadeamento entre o elemento e outro.
  - Alocação Dinâmica: responsável por reservar espaço em tempo de execução para novos elementos da lista encadeada.
 
-image.png
+![image](https://user-images.githubusercontent.com/52088444/169707464-a13c51ea-74b8-4eac-9112-3837a3f898fe.png)
 
 As setas em azul são os ponteiros , eles basicamente apontam para o próximo elemento da lista , e por eles que vou trafegar por dentro da lista.
 As structs são os elemntos que temos e vamos criar, cada struct  vai ter um ponteiro que vai apontar para o próximo elemento gerando o encadeamento.
@@ -231,7 +231,7 @@ As structs são os elemntos que temos e vamos criar, cada struct  vai ter um pon
 
 ## Listas encadeadas na memoria RAM
 
-image.png
+![image](https://user-images.githubusercontent.com/52088444/169707466-0fc72406-61b6-4228-bce8-dab6cf9a586d.png)
 
 Ao contrario dos vetores que são alocados continuamente na memória RAM, as listas encadeadas são alocadas em qualquer posição da memória RAM.
 
