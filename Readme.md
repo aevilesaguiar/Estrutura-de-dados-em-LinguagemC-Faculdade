@@ -173,3 +173,44 @@ A resposta é que devemos avaliar o problema, se sabemos todas as variaveis que 
 ![image](https://user-images.githubusercontent.com/52088444/169663524-944bfa14-62db-421e-9458-9f84ceab56b2.png)
 
 ![image](https://user-images.githubusercontent.com/52088444/169663689-734571d0-8810-4ac0-9a6f-ef6c3c0680d5.png)
+
+## Structs
+
+Structs, também conhecidas como Registros, definem tipos de dados que agrupam variáveis sob um mesmo tipo de dado.
+
+A ideia de usar uma struct é permitir que, ao armazenar os dados de uma mesma entidade, isto possa ser feito com uma única variável. Por exemplo, se for preciso armazenar a altura, o peso e a idade de uma pessoa, pode-se criar uma struct chamada Pessoa e agrupar os dados em um único tipo de dado, conforme o exemplo a seguir.
+
+Aos dados agruados em uma struct dá-se o nome de campos(fields).
+
+As structs conseguem agrupar determinados tipos de dados dentro de uma uma unica estrutura, então conseguimos criar um novo tipo de dado. Assim como os objeto as structs terãoa tributos que sã as variaveis, as structs não armazena métodos.
+
+Utilizamos o typedef que define o nome dos tipos de dados.
+
+typedef struct pessoa Pessoa; -> estou renomeando pessoa para Pessoa.
+
+## Ponteiros
+
+Ponteiros é um recurso na linguagem C , por meio do qual podemos guardar endereços, seja uma variável, uma struct que esteja armazenada na memória RAM. Ponteiros é muito importante pois irá alocar as estruturas dinamicamente na memória RAM.
+
+Os ponteiros são muito importantes quando queremos alocar informações dinamicas sob demanda que serão alocadas na memória heap.
+
+## Alocação dinamica
+
+Na alocação dinâmica podemos alocar espaços durante a execução de um programa, ou seja, a alocação dinâmica é feita em tempo de execução. Isto é bem interessante do ponto de vista do programador, pois permite que o espaço em memória seja alocado apenas quando necessário. Além disso, a alocação dinâmica permite aumentar ou até diminuir a quantidade de memória alocada.
+
+- sizeof: A função sizeof determina o número de bytes para um determinado tipo de dados.
+É interessante notar que o número de bytes reservados pode variar de acordo com o compilador utilizado.
+Exemplo: x = sizeof(int); //retorna 4 no gcc
+
+- malloc : para alocar dinamicamente nós usamos a função malloc, a mesma aloca um espaço de memória e retorna um ponteiro do tipo void para o início do espaço de memória alocado.
+
+Quando usamos a função malloc ex: Ponto *p = malloc(sizeof(Ponto)); , a função malloc que vai alocar dinamicamente um espaço em memória, no exemplo acima quando executamos a função maloc a estrutura Ponto da qual vamos utilizar um ponteiro *p para apontar para ela, ela é alocada na nossa memória Heap, que éa memoria livre.
+
+
+- free: A função free libera o espaço de memória alocado.
+
+
+
+
+
+
