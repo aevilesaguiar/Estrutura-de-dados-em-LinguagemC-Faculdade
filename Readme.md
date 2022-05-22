@@ -209,8 +209,37 @@ Quando usamos a função malloc ex: Ponto *p = malloc(sizeof(Ponto)); , a funç�
 
 - free: A função free libera o espaço de memória alocado.
 
+## Listas
+
+Listas são comuns no dia a dia, lista nada mais é do que o conjunto de diversos elementos organizados em uma determinada sequencia, sendo passivel de inserções e remoções
+
+## Listas encadeadas
+
+Na computação uma lista é implementada como uma lsita encadeada. Um elementos é encadeado á outro de forma que cada elemento tem no maximo um elemento  subsequente e no maximo um elemento antecedente.
+Em uma lista encadeada pode ocorrere inserções e remoções em quaisquer posições de uma lista. Encadeadas por que cada elementos está ligado ao outro.
+
+Uma lista é implementada com a utilização de:
+ - Structs: que representam cada um dos elementos da lista.
+ - Ponteiros: realizam o encadeamento entre o elemento e outro.
+ - Alocação Dinâmica: responsável por reservar espaço em tempo de execução para novos elementos da lista encadeada.
+
+image.png
+
+As setas em azul são os ponteiros , eles basicamente apontam para o próximo elemento da lista , e por eles que vou trafegar por dentro da lista.
+As structs são os elemntos que temos e vamos criar, cada struct  vai ter um ponteiro que vai apontar para o próximo elemento gerando o encadeamento.
 
 
+## Listas encadeadas na memoria RAM
 
+image.png
 
+Ao contrario dos vetores que são alocados continuamente na memória RAM, as listas encadeadas são alocadas em qualquer posição da memória RAM.
 
+o laranjinha mostra a organização lógica e o azul mostra a localização fisica como estão na memória RAM.
+
+- Pontos positivos
+	- alocação sob-demanda;
+	- Inserção e remoção no meio da estrutura , não necessita de realocação dos demais elementos já existentes
+- POntos negativos
+	- Estruturas não estão linearmente na memória, busca por elementos se torna mais onerosa
+	- Inserção e remoção pode se tornar trabalhosa se a posição requerida está muito distante, necessidade de percorrer toda a lista para inserir ou remover;
